@@ -1,0 +1,23 @@
+@import "shared/styles/variables";
+.text {
+  display: flex;
+  font-size: 0.8rem;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  height: 100vh;
+  width: 100%;
+  padding: 0 !important;
+  color: $palette-gray-5;
+  &--left,
+  &--right {
+    cursor: pointer;
+  }
+
+  &--left {
+    transform: rotate(270deg);
+  }
+  &--right {
+    transform: rotate(90deg);
+  }
+}
