@@ -1,0 +1,75 @@
+@import "shared/styles/_variables.scss";
+@font-face {
+  font-family: "IRANSans";
+  src: url("//db.onlinewebfonts.com/t/3967f8bfcdf02e2b966e2f252738ddca.eot");
+  src: url("//db.onlinewebfonts.com/t/3967f8bfcdf02e2b966e2f252738ddca.eot?#iefix")
+      format("embedded-opentype"),
+    url("//db.onlinewebfonts.com/t/3967f8bfcdf02e2b966e2f252738ddca.woff2")
+      format("woff2"),
+    url("//db.onlinewebfonts.com/t/3967f8bfcdf02e2b966e2f252738ddca.woff")
+      format("woff"),
+    url("//db.onlinewebfonts.com/t/3967f8bfcdf02e2b966e2f252738ddca.ttf")
+      format("truetype"),
+    url("//db.onlinewebfonts.com/t/3967f8bfcdf02e2b966e2f252738ddca.svg#IRANSans")
+      format("svg");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body,
+html {
+  font-family: "Roboto", sans-serif;
+  background-color: $palette-gray-0; /* MAIN COLOR */
+  overflow-x: hidden;
+}
+.App {
+  width: 100%;
+}
+//h1 {
+//  color: $palette-pure-white; /* BIG TITLE */
+//}
+//p {
+//  color: $palette-gray-12; /* descriptions */
+//}
+.section-description {
+  overflow: hidden;
+}
+
+.section {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: space-between;
+  overflow: hidden;
+
+  .image {
+    background-size: cover;
+    object-fit: cover;
+    width: 100%;
+  }
+  .desc {
+    top: 30%;
+    left: 10%;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 200px;
+    .title {
+      font-size: 5rem;
+      margin: 0;
+    }
+    p {
+      font-size: 3rem;
+      font-weight: bold;
+      color: $palette-gray-19;
+    }
+    h1 {
+      color: $palette-gray-0;
+    }
+  }
+}

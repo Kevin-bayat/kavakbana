@@ -1,0 +1,21 @@
+@import "shared/styles/variables";
+.burger-menu {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  height: 100px;
+  position: fixed;
+  top: 0;
+  right: 0;
+  margin-right: 20px;
+  cursor: pointer;
+  color: $palette-white;
+  z-index: 4;
+  .icon {
+    color: #333333;
+  }
+  h2 {
+    padding-right: 10px;
+    line-height: 50px;
+  }
+}

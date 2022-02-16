@@ -1,0 +1,18 @@
+@import "shared/styles/variables";
+.logo {
+  font-family: "Bebas Neue", sans-serif;
+  display: flex;
+  position: absolute;
+  margin: 15px;
+  z-index: 4;
+
+  &--title {
+    letter-spacing: 5px;
+    font-size: 3rem;
+    cursor: pointer;
+  }
+  p {
+    font-size: 1.2rem;
+    line-height: 80px;
+  }
+}

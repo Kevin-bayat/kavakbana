@@ -1,0 +1,18 @@
+@import "shared/styles/variables";
+.button {
+  padding: 15px 10px;
+  margin-top: 20px;
+  font-size: 1.2rem;
+  width: 135px !important;
+  border: none;
+  border-radius: 5px;
+  height: auto;
+  cursor: pointer;
+  background-color: $palette-rich-black;
+  color: $palette-gray-0;
+
+  &:hover {
+    background: $palette-gray-0;
+    color: $palette-rich-black;
+  }
+}
