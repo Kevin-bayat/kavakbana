@@ -1,16 +1,26 @@
 @import "shared/styles/variables";
 .slider {
   width: 100vw;
-  height: 100vh;
-  display: flex;
-  justify-content: space-between;
+  height: 100%;
   overflow: hidden;
+  position: relative;
+  //display: flex;
 
-  .image {
-    background-size: cover;
-    object-fit: cover;
-    width: 100%;
+  .slider-container {
+    display: flex;
+    height: 100vh;
   }
+
+  .image-container {
+    position: relative;
+    .image {
+      background-size: cover;
+      object-fit: cover;
+      width: 100vw;
+      height: 100vh;
+    }
+  }
+
   .desc {
     top: 30%;
     left: 10%;
@@ -31,5 +41,23 @@
     h1 {
       color: $palette-gray-0;
     }
+  }
+
+  .arrow {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: white;
+    opacity: 0.5;
+    color: #1f1f1f;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 8;
   }
 }

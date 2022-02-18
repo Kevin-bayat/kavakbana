@@ -1,11 +1,9 @@
 import React, { useEffect, useState } from "react";
 import Navbar from "./components/Navbar/Navbar";
 import "./App.styles.scss";
-import Description from "./components/description/Description";
-import OurWork from "./components/our-work/our-work";
 import Loader from "./components/Loader/Loader";
-import Slider from "./components/Slider/Slider";
-import Home from "./pages/Home/Home";
+import Footer from "./components/Footer/Footer";
+import Layout from "./components/Layout/Layout";
 
 function App() {
   const [loading, setLoading] = useState(false);
@@ -24,11 +22,8 @@ function App() {
       ) : (
         <>
           <Navbar />
-          <Home>
-            <Slider />
-            <Description />
-            <OurWork />
-          </Home>
+          <Layout />
+          <Footer />
         </>
       )}
     </div>
