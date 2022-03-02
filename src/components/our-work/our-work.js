@@ -31,7 +31,7 @@ const OurWork = () => {
           <motion.div
             drag="x"
             dragConstraints={{ right: 0, left: -width }}
-            elevation={6}
+            elevation={15}
             className="inner-carousel"
           >
             {kavakData.map((item) => (

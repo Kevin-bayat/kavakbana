@@ -35,19 +35,18 @@
   margin: auto;
   cursor: grab;
   overflow: hidden;
-
+  z-index: 10;
   .inner-carousel {
     display: flex;
 
     .image {
       min-width: 30rem;
       min-height: 30rem;
-      padding: 40px;
+      padding: 30px;
       pointer-events: none;
       & > img {
         width: 100%;
         height: 100%;
-        border-radius: 1rem;
       }
     }
   }

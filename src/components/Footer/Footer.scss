@@ -1,10 +1,69 @@
+@import "shared/styles/variables";
 .footer {
   width: 100%;
   background-color: #1f1f1f;
   color: white;
-  height: 180px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-top: 70px;
+  height: 240px;
+  bottom: 0;
+  .left {
+    flex: 1;
+    background-color: #000;
+    height: 100%;
+    line-height: 240px;
+
+    .logo {
+      margin: 0 auto;
+      font-size: 6rem;
+      left: 15%;
+    }
+  }
+  .right {
+    flex: 1;
+    margin-top: 20px;
+
+    .kavak-info {
+      line-height: 2;
+      padding-left: 18px;
+      margin-top: 30px;
+      color: $palette-gray-14;
+
+      .icon {
+        display: flex;
+
+        & > span {
+          padding: 5px 5px 0 0;
+          text-align: center;
+        }
+
+        .phone {
+          display: flex;
+          flex-direction: column;
+        }
+      }
+    }
+    .social {
+      right: 10px;
+      display: flex;
+      padding: 10px 0 0 20px;
+
+      &__icon {
+        cursor: pointer;
+        padding: 0 5px;
+
+        > a {
+          color: white;
+
+          .instagram:hover {
+            color: #d63085;
+          }
+          .linkedin:hover {
+            color: #0a66c2;
+          }
+          .email:hover {
+            color: #ea4335;
+          }
+        }
+      }
+    }
+  }
 }

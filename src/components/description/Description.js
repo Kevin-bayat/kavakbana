@@ -4,6 +4,7 @@ import "./Description.scss";
 import Image1 from "../../img/Woolacombe-Bay-Architecture-by-INKSPACE-Feature-2.jpg";
 import Image2 from "../../img/sliderImage/Coach-House-Architecture-by-INKSPACE-11-of-1.jpg";
 import { Container, Grid, Typography } from "@mui/material";
+
 const Description = () => {
   return (
     <Grid container spacing={2} className="description">

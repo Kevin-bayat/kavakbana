@@ -4,6 +4,7 @@ import Button from "../Button/Button";
 import { sliderData } from "../../data/SliderData/sliderData";
 import { ArrowLeft, ArrowRight } from "@mui/icons-material";
 import styled from "styled-components";
+import Text from "../Text/Text";
 
 const Wrapper = styled.div`
   display: flex;
@@ -24,6 +25,7 @@ const Slider = () => {
 
   return (
     <section className="slider">
+      {/*<Text />*/}
       <div
         className="arrow"
         style={{ left: "10px" }}
